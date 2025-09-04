@@ -1,0 +1,248 @@
+.timeline-container {
+  position: relative;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 rgba(2, 2, 2, 5);
+  min-height: auto;
+}
+
+.timeline-vertical-line {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 7px;
+  height: 75%;
+  background: #ffbe99;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 70px;
+  margin-bottom: 40px;
+  padding-left: 55px;
+  margin-left: 50px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+.timeline-dot2 {
+  position: absolute;
+  left: 55px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 60px;
+  height: 7px;
+  background: #ffbe99;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.year-box {
+  background: #fff;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 15px 30px;
+  min-width: 220px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 rgba(2, 2, 2, 5);
+  transition: all 0.3s ease;
+}
+.year-box:hover {
+  box-shadow: 10px 10px 0 rgba(255, 190, 153, 0.44);
+  cursor: pointer;
+}
+
+.year-bg {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.year-text {
+  font-size: 2.5rem;
+  color: #000000;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.description-box {
+  padding: 15px;
+  padding-right: 250px;
+  margin-left: 20px;
+  flex: 1;
+  text-align: left;
+  font-size: 2rem;
+  position: relative;
+  top: 15px;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.timeline-text {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .timeline-container {
+    padding: 10px;
+  }
+
+  .timeline-vertical-line {
+    left: 20px;
+    width: 4px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding-left: 30px;
+  }
+
+  .timeline-item::before {
+    width: 30px;
+  }
+
+  .year-box {
+    min-width: 180px;
+    height: auto;
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  .year-text {
+    font-size: 1.6rem;
+  }
+
+  .description-box {
+    font-size: 1.2rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .timeline-vertical-line {
+    width: 6px;
+    height: 74%;
+    position: absolute;
+    top: 93px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .timeline-item::before {
+    top: 50px;
+    width: 53px;
+  }
+
+  .timeline-dot {
+    top: 50px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .timeline-dot2 {
+    top: 50px;
+    width: 15px;
+    left: 50px;
+    height: 15px;
+  }
+
+  .year-box {
+    align-items: center;
+    justify-content: center;
+    min-width: auto;
+    width: 70%;
+    margin-bottom: 15px;
+    padding: 15px;
+    gap: 80px;
+  }
+
+  .year-bg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .year-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .description-box {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .timeline-container {
+    max-width: 1200px;
+  }
+
+  .timeline-item {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .year-box {
+    height: 95px;
+  }
+}

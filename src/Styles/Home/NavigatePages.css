@@ -1,0 +1,119 @@
+.navigate-section {
+  background: #fff4f0;
+}
+
+.explore-btn {
+  border-radius: 20px;
+  padding: 4px 5px;
+  font-size: 0.85rem;
+}
+
+.section-title {
+  color: #000000;
+  margin: 0 auto 0.5rem;
+  border: 1px solid black;
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+
+.section-heading {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+.section-subtitle {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+.custom-card {
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 25px 30px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: #fff;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.9);
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0 rgba(255, 190, 153, 0.44);
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.separator .line {
+  height: 3px;
+  background-color: #e69574;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.separator .circle {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #e69574;
+  border-radius: 50%;
+}
+
+.learn-btn {
+  margin-top: 15px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 8px 20px;
+  width: 100%;
+  font-weight: 500;
+  background-color: #ffdecc;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.9);
+}
+
+.learn-btn:hover {
+  background-color: #fdcbb0;
+  border: 1px solid #000;
+}
+
+@media (max-width: 576px) {
+  .custom-card {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .custom-card {
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .custom-card {
+    padding: 20px 80px;
+  }
+}

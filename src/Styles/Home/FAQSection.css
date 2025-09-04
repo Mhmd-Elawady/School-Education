@@ -1,0 +1,129 @@
+.faq-section {
+  background: #fff4f0;
+  border-radius: 10px;
+}
+
+.section-title {
+  color: #000;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  width: fit-content;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.heading {
+  font-size: 2.5rem;
+}
+
+.faq-item {
+  background-color: #ffefe5;
+  border: 1px solid #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item.active {
+  background-color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.faq-item.active .icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  will-change: max-height, opacity;
+}
+
+.faq-answer.show {
+  max-height: 300px;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+    padding: 4px 12px;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+
+  .faq-item h3 {
+    font-size: 0.95rem;
+  }
+
+  .faq-item .icon {
+    width: 24px;
+    height: 24px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .section-title {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .faq-item h3 {
+    font-size: 0.9rem;
+  }
+
+  .faq-item {
+    padding: 1rem;
+  }
+
+  .faq-item .icon {
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+  }
+}

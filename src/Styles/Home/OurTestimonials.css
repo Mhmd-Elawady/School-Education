@@ -1,0 +1,152 @@
+.testimonialsSection {
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #fff4f0;
+}
+.section-title {
+  color: #000000;
+  margin: 0 auto 1rem;
+  border: 1px solid black;
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  color: #6c757d;
+  max-width: 750px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.testimonialCard {
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0 rgba(255, 190, 153, 0.44);
+  cursor: pointer;
+}
+
+.avatar {
+  font-size: 3rem;
+  color: #ff8d4c;
+  margin-bottom: 0.75rem;
+}
+
+.testimonialName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+  color: #212529;
+}
+
+.stars {
+  color: #ff8d4c;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.testimonialText {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 1200px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .testimonialsSection {
+    padding: 4rem 2rem;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .sectionSubtitle {
+    font-size: 0.95rem;
+    max-width: 600px;
+  }
+  .testimonialCard {
+    padding: 1.5rem 1rem;
+  }
+  .avatar {
+    font-size: 2.5rem;
+  }
+  .testimonialName {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonialsSection {
+    padding: 3rem 1.5rem;
+  }
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  .sectionSubtitle {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  .testimonialCard {
+    padding: 1rem 1rem;
+  }
+  .testimonialText {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+  .sectionSubtitle {
+    font-size: 0.85rem;
+  }
+  .avatar {
+    font-size: 2rem;
+  }
+  .testimonialName {
+    font-size: 1rem;
+  }
+  .stars {
+    font-size: 1rem;
+  }
+  .testimonialText {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
