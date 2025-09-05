@@ -43,7 +43,7 @@ export default function StudentsLearn({
             viewport={{ once: false, amount: 0.2 }}
           >
             {data.map((item, index) => (
-              <Col key={index} md={6} lg={4} className="mb-4">
+              <Col key={index} md={6} lg={4} className="mb-4 d-flex">
                 <motion.div variants={cardVariants}>
                   <Card className="h-100 subject-card">
                     <div className="rectangular"></div>
