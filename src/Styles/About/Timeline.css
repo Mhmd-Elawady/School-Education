@@ -213,8 +213,8 @@
   }
 
   .year-bg {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
   }
 
   .year-text {
@@ -228,6 +228,17 @@
     margin: 0 auto;
     padding: 0;
     width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .year-bg {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+  .year-text {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 

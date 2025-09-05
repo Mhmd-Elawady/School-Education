@@ -82,7 +82,6 @@ const Timeline = () => {
                   src={pattern}
                   alt="Pattern"
                   className="year-bg"
-                  effect="blur"
                 />
                 <h3 className="year-text">{item.year}</h3>
               </div>
