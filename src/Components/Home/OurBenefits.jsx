@@ -15,7 +15,7 @@ const OurBenefits = ({ sectionTitle, sectionHeading, sectionDescription, items }
 
         <Row className="benefits-grid">
           {items.map((item, index) => (
-            <Col key={index} xs={12} md={6} lg={4} className="benefit-col">
+            <Col key={index} xs={12} md={6} lg={4} className="benefit-col d-flex">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
