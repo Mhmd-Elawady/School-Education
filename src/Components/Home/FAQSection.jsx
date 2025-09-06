@@ -54,7 +54,7 @@ function FAQSection() {
 
       <div className="row g-4">
         {faq.map((item, i) => (
-          <div className="col-md-6" key={i}>
+          <div className="col-md-6 d-flex" key={i}>
             <motion.div
               className={`faq-item p-4 rounded ${active === i ? "active" : ""}`}
               onClick={() => handleClick(i)}
