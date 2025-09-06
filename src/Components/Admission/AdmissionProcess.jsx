@@ -32,7 +32,7 @@ const AdmissionProcess = ({ sectionTitle, sectionHeading, sectionDescription, it
 
         <Row className="admission-process-grid">
           {items.map((item, index) => (
-            <Col key={index} xs={12} md={6} lg={4} className="admission-process-col">
+            <Col key={index} xs={12} md={6} lg={4} className="admission-process-col d-flex">
               <motion.div
                 initial="hidden"
                 whileInView="visible"
