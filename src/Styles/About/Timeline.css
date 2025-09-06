@@ -271,6 +271,12 @@
   .year-box {
     height: 95px;
   }
+  .timeline-vertical-line{
+  top: 120px;
+  left: 50px;
+  width: 7px;
+  height: 75%;
+}
 }
 @media (max-width: 1200px) {
 .timeline-vertical-line{
