@@ -56,7 +56,7 @@ function FAQSection() {
         {faq.map((item, i) => (
           <div className="col-md-6 d-flex" key={i}>
             <motion.div
-              className={`faq-item p-4 rounded ${active === i ? "active" : ""}`}
+              className={`faq-item p-4 rounded w-100 ${active === i ? "active" : ""}`}
               onClick={() => handleClick(i)}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
