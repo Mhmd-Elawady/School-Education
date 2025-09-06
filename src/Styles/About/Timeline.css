@@ -272,3 +272,11 @@
     height: 95px;
   }
 }
+@media (max-width: 1200px) {
+.timeline-vertical-line{
+  top: 80px;
+  left: 50px;
+  width: 7px;
+  height: 70%;
+}
+}
