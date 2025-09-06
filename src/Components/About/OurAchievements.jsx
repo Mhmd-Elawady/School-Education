@@ -32,7 +32,7 @@ export default function OurAchievements({ sectionTitle, sectionHeading, sectionD
 
         <Row className="achievements-grid">
           {items.map((item, index) => (
-            <Col key={index} xs={12} md={6} lg={4} className="achievement-col">
+            <Col key={index} xs={12} md={6} lg={4} className="achievement-col d-flex">
               <motion.div
                 initial="hidden"
                 whileInView="visible"
