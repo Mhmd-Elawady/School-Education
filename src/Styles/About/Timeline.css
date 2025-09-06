@@ -274,9 +274,9 @@
 }
 @media (max-width: 1200px) {
 .timeline-vertical-line{
-  top: 75px;
+  top: 120px;
   left: 50px;
   width: 7px;
-  height: 70%;
+  height: 75%;
 }
 }
