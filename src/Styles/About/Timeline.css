@@ -281,3 +281,13 @@
   height: 75%;
 }
 }
+@media (max-width:1920px)
+{
+  .timeline-vertical-line{
+  top: 120px;
+  left: 50px;
+  width: 7px;
+  height: 75%;
+}
+}
+  
