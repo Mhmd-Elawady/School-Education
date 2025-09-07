@@ -230,3 +230,7 @@
     font-size: 12px;
   }
 }
+@media (min-width: 992px) {
+  .hero {
+    padding: 60px 270px;
+  }
